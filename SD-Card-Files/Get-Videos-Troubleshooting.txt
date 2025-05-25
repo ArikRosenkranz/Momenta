@@ -1,0 +1,11 @@
+Troubleshooting Guide for Startup Issues: Get-Videos.command
+
+If the script does not start when double-clicked, macOS may be blocking the file. In this case:
+
+1. Open the Terminal (e.g., via Spotlight by pressing ⌘ + Space and typing “Terminal”).
+2. Copy the following command into the Terminal:
+
+xattr -d com.apple.quarantine /Volumes/MOMENTA/Get-Videos.command
+
+3. Press the Return key.
+4. This will remove the quarantine flag, and the script should then work as expected.
